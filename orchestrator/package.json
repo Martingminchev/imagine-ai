@@ -1,0 +1,23 @@
+{
+  "name": "orchestrator",
+  "version": "1.0.0",
+  "description": "Local AI coding orchestrator with long-term memory",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:ui && node index.js",
+    "dev": "node index.js",
+    "dev:ui": "npm run dev --prefix ui",
+    "build:ui": "npm run build --prefix ui"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
